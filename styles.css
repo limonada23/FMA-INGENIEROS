@@ -927,7 +927,7 @@ html {
     }
 
     .logo {
-        width: 140px; 
+        width: 140px;
         height: 60px;
         margin-left: 0;
     }
@@ -981,6 +981,7 @@ html {
 
     .card {
         border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     }
 
     .card img {
@@ -1006,7 +1007,7 @@ html {
     }
 
     .whatsapp-btn .text {
-        display: none; 
+        display: none;
     }
 
     .form-container {
@@ -1044,9 +1045,8 @@ html {
         scroll-behavior: smooth;
         gap: 15px;
         scroll-snap-type: x mandatory;
-        padding: 20px 20px 30px 20px; 
+        padding: 20px 20px 30px 20px;
         overflow-y: visible;
-        
     }
 
     #servicios .grid::-webkit-scrollbar,
@@ -1061,8 +1061,38 @@ html {
         scroll-snap-align: center;
     }
 
-    .card {
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    .contenido-servicio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .lista-servicios {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .lista-servicios p {
+        font-size: 16px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .imagenes-servicio {
+        width: 100%;
+        max-width: 320px;
+        margin-top: 0;
+    }
+
+    .imagenes-servicio img {
+        height: 180px;
+        border-radius: 12px;
+    }
+
+    .servicios-detalle h2 {
+        font-size: 24px;
+        text-align: center;
     }
 
     .footer-container {
@@ -1109,5 +1139,4 @@ html {
     .controls .next {
         margin-right: 10px;
     }
-
 }
