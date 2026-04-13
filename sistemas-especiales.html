@@ -1,139 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Sistemas Especiales | FMA Ingenieros</title>
-
-<meta name="description" content="FMA Ingenieros: servicios de ingeniería en sistemas contra incendios, instalaciones eléctricas, seguridad electrónica y obras civiles en Perú.">
-<meta name="keywords" content="ingeniería Perú, sistemas contra incendios, instalaciones eléctricas, seguridad electrónica, obras civiles">
+<meta name="description" content="FMA Ingenieros: puertas cortafuego, puertas enrollables industriales, puertas blindadas, sistemas automáticos y ventilación industrial en Perú.">
+<meta name="keywords" content="sistemas especiales, puertas cortafuego, puertas blindadas, ventilación industrial, ingeniería Perú">
 <meta name="author" content="FMA Ingenieros">
-
-<meta property="og:title" content="FMA Ingenieros">
-<meta property="og:description" content="Soluciones integrales en ingeniería y proyectos">
-<meta property="og:image" content="https://fmaingenieros.com/img/slide1.jpg">
-<meta property="og:url" content="https://fmaingenieros.com/">
+<meta property="og:title" content="Sistemas Especiales | FMA Ingenieros">
+<meta property="og:description" content="Soluciones especializadas para la protección, control y continuidad operativa de tus instalaciones.">
+<meta property="og:image" content="https://fmaingenieros.com/img/serv7.webp">
+<meta property="og:url" content="https://fmaingenieros.com/sistemas-especiales">
 <meta property="og:type" content="website">
-
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/png" href="/img/fma.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/img/fma.png" sizes="16x16">
-<link rel="apple-touch-icon" href="/img/fma.png">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="img/fma.png">
+<link rel="shortcut icon" href="img/fma.png">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-base.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles-services.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Sistemas Especiales",
+  "serviceType": "Implementación de sistemas especiales de ingeniería para edificaciones y plantas industriales",
+  "provider": {
+    "@type": "Organization",
+    "name": "FMA Ingenieros",
+    "url": "https://fmaingenieros.com/"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Perú"
+  },
+  "url": "https://fmaingenieros.com/sistemas-especiales.html",
+  "image": "https://fmaingenieros.com/img/serv7.webp"
+}
+</script>
 </head>
-
 
 <body class="pagina-servicios">
 
-<header class="header-interno"> 
-  <a href="/" class="logo">
-    <img src="img/fma_blanco.png" alt="logo">
-</a>
-
-    <nav>
-        <a href="/">Inicio</a>
-        <a href="/acerca-de">Nosotros</a>
-          <div class="dropdown">
-        <a href="/#servicios">Servicios ▾</a>
-
-        <div class="dropdown-menu">
-            <a href="/contra-incendio">Sistemas contra incendios</a>
-            <a href="/instalaciones-electricas">Instalaciones eléctricas</a>
-            <a href="/seguridad-electronica">Seguridad electrónica</a>
-            <a href="/redes">Redes y comunicaciones</a>
-            <a href="/obras">Obras civiles</a>
-            <a href="/mantenimiento">Mantenimiento general</a>
-            <a href="/sistemas-especiales">Sistemas especiales</a>
-        </div>
+<header>
+  <div class="logo">
+    <img src="img/logo fma.png" class="logo-color" alt="FMA Ingenieros" decoding="async">
+    <img src="img/fma_blanco.png" class="logo-white" alt="FMA Ingenieros" decoding="async">
+  </div>
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="acerca-de">Nosotros</a>
+    <div class="dropdown">
+      <a href="#servicios">Servicios ▾</a>
+      <div class="dropdown-menu">
+        <a href="contra-incendio">Sistemas contra incendios</a>
+        <a href="instalaciones-electricas">Instalaciones eléctricas</a>
+        <a href="seguridad-electronica">Seguridad electrónica</a>
+        <a href="redes">Redes y comunicaciones</a>
+        <a href="obras">Obras civiles</a>
+        <a href="mantenimiento">Mantenimiento general</a>
+        <a href="sistemas-especiales">Sistemas especiales</a>
+      </div>
     </div>
-        <a href="/contacto">Contacto</a>
-    </nav>
+    <a href="contacto">Contacto</a>
+  </nav>
+  <button class="hamburger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
 
-<section class="servicios-detalle">
-    <h2>SISTEMAS ESPECIALES</h2>
-
-    <div class="contenido-servicio">
-
-        <div class="lista-servicios">
-            <p>Puertas cortafuego</p>
-            <p>Puertas enrollables</p>
-            <p>Puertas blindadas</p>
-            <p>Sistemas automáticos</p>
-            <p>Equipos de ventilación/extracción</p>
-        </div>
-
-        <div class="imagenes-servicio">
-            <img src="img/serv7-01.jpg" alt="Puertas enrollables">
-            <img src="img/serv7-02.png" alt="Equipos de ventilación/extracción">
-        </div>
-
-    </div>
-    
-       <a href="/contacto" class="btn-cotiza center">
-        Cotiza aquí.
+<section class="se-hero" style="background-image: url('img/serv7.webp');">
+  <div class="se-hero-content">
+    <span class="se-badge">Sistemas Especiales</span>
+    <h1>Soluciones para<br><em>ambientes críticos</em></h1>
+    <p>Diseñamos e implementamos sistemas especializados que garantizan la protección, control y continuidad operativa de tus instalaciones con los más altos estándares técnicos.</p>
+    <a href="contacto" class="se-btn-primary">
+      Solicitar cotización
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
     </a>
+  </div>
+  <div class="se-hero-scroll">
+    <span></span> Scroll para más
+  </div>
 </section>
 
-<a href="https://wa.me/51953943919" class="whatsapp-btn" target="_blank">
-    <img src="img/wsp.png" class="icon-img">
-    <span class="text">Escríbenos al<br>Whatsapp</span>
+<section class="se-stats">
+  <div class="se-stats-inner">
+    <div class="se-stat">
+      <div class="se-stat-number">+5</div>
+      <div class="se-stat-label">Años de experiencia</div>
+    </div>
+    <div class="se-stat">
+      <div class="se-stat-number">+50</div>
+      <div class="se-stat-label">Proyectos ejecutados</div>
+    </div>
+    <div class="se-stat">
+      <div class="se-stat-number">+30</div>
+      <div class="se-stat-label">Clientes satisfechos</div>
+    </div>
+    <div class="se-stat">
+      <div class="se-stat-number">100%</div>
+      <div class="se-stat-label">Cobertura nacional</div>
+    </div>
+  </div>
+</section>
+
+<section class="se-services">
+  <div class="se-section-header">
+    <span class="se-label">Nuestros servicios</span>
+    <h2>Soluciones especializadas<br>a tu medida</h2>
+    <p>Implementamos tecnología de alta precisión para proteger y optimizar tus instalaciones industriales y comerciales.</p>
+  </div>
+
+  <div class="se-cards-grid">
+
+    <div class="se-card">
+      <div class="se-card-num">01</div>
+      <div class="se-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+        </svg>
+      </div>
+      <h3>Puertas cortafuego certificadas</h3>
+      <p>Compartimentación de riesgos con puertas certificadas que detienen la propagación del fuego, conforme a normativas técnicas vigentes.</p>
+    </div>
+
+    <div class="se-card">
+      <div class="se-card-num">02</div>
+      <div class="se-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="3" rx="1"/>
+          <rect x="3" y="10" width="18" height="3" rx="1"/>
+          <rect x="3" y="16" width="18" height="3" rx="1"/>
+        </svg>
+      </div>
+      <h3>Puertas enrollables industriales</h3>
+      <p>Soluciones para zonas críticas de operación que combinan robustez, durabilidad y funcionalidad en entornos de alta demanda operacional.</p>
+    </div>
+
+    <div class="se-card">
+      <div class="se-card-num">03</div>
+      <div class="se-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+      </div>
+      <h3>Puertas blindadas</h3>
+      <p>Control de accesos y protección de ambientes sensibles con puertas blindadas de alto rendimiento para máxima seguridad perimetral.</p>
+    </div>
+
+    <div class="se-card">
+      <div class="se-card-num">04</div>
+      <div class="se-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </svg>
+      </div>
+      <h3>Sistemas automáticos de emergencia</h3>
+      <p>Automatización de apertura, cierre y respuesta ante emergencias integrada a sistemas centrales de control y monitoreo en tiempo real.</p>
+    </div>
+
+    <div class="se-card">
+      <div class="se-card-num">05</div>
+      <div class="se-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/>
+        </svg>
+      </div>
+      <h3>Ventilación y extracción industrial</h3>
+      <p>Equipos de ventilación y extracción diseñados para garantizar seguridad, confort y cumplimiento de normas ambientales en instalaciones críticas.</p>
+    </div>
+
+    <div class="se-card se-card-dark">
+      <div class="se-card-num">✦</div>
+      <div class="se-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.69 3.37 2 2 0 0 1 3.68 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.65a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+      </div>
+      <h3>¿Proyecto personalizado?</h3>
+      <p>Nuestros ingenieros evaluarán tu instalación y propondrán la solución más eficiente, sin costo inicial.</p>
+      <a href="contacto" class="se-btn-primary" style="margin-top: 26px; font-size: 14px; padding: 13px 28px;">Contactar ahora</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="se-benefits">
+  <div class="se-section-header">
+    <span class="se-label">¿Por qué elegirnos?</span>
+    <h2>Ingeniería con respaldo<br>y compromiso real</h2>
+  </div>
+  <div class="se-benefits-grid">
+
+    <div class="se-benefit">
+      <div class="se-benefit-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <div class="se-benefit-text">
+        <h4>Certificaciones técnicas</h4>
+        <p>Trabajamos con materiales y equipos certificados bajo las normativas nacionales e internacionales vigentes.</p>
+      </div>
+    </div>
+
+    <div class="se-benefit">
+      <div class="se-benefit-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 15 15"/>
+        </svg>
+      </div>
+      <div class="se-benefit-text">
+        <h4>Soporte post-instalación</h4>
+        <p>Brindamos mantenimiento preventivo y correctivo para asegurar el funcionamiento óptimo de cada sistema instalado.</p>
+      </div>
+    </div>
+
+    <div class="se-benefit">
+      <div class="se-benefit-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+      </div>
+      <div class="se-benefit-text">
+        <h4>Equipo especializado</h4>
+        <p>Ingenieros y técnicos con experiencia comprobada en proyectos industriales, comerciales e institucionales a nivel nacional.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="se-gallery">
+  <div class="se-gallery-grid">
+    <div class="se-gallery-item">
+      <img src="img/serv7-01.webp" alt="Sistema de puerta especial instalada en área industrial" loading="lazy" decoding="async">
+    </div>
+    <div class="se-gallery-item">
+      <img src="img/serv7-02.webp" alt="Solución de ventilación y extracción en infraestructura técnica" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<section class="se-cta">
+  <div class="se-cta-inner">
+    <span class="se-label">Trabajemos juntos</span>
+    <h2>¿Listo para proteger<br>tus instalaciones?</h2>
+    <p>Nuestro equipo de ingenieros está disponible para analizar tu proyecto y proponer la solución más eficiente para tus necesidades específicas.</p>
+    <div class="se-cta-btns">
+      <a href="contacto" class="se-btn-primary">
+        Solicitar cotización
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <a href="tel:+51953943919" class="se-btn-outline">Llamar ahora</a>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/51953943919" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Escribir a FMA Ingenieros por WhatsApp">
+  <img src="img/wsp.png" class="icon-img" alt="WhatsApp" loading="lazy" decoding="async">
+  <span class="text">Escríbenos al<br>Whatsapp</span>
 </a>
 
 <footer class="footer">
+  <div class="footer-top-bar"></div>
+  <div class="footer-container">
 
-    <div class="footer-container">
-
-        <div class="footer-col">
-            <img src="img/fma_blanco.png" class="footer-logo">
-            <p>FMA Ingenieros brinda soluciones en sistemas contra incendios, electricidad, seguridad y obras civiles en Perú.</p>
-        </div>
-
-        <div class="footer-col">
-            <h3>Enlaces</h3>
-            <a href="/">Inicio</a>
-            <a href="/acerca-de">Nosotros</a>
-            <a href="/#servicios">Servicios</a>
-            <a href="/contacto">Contacto</a>
-        </div>
-
-        <div class="footer-col">
-            <h3>Contáctanos</h3>
-            <p>(+51) 051 - 795640</p>
-            <p>(+51) 953 943 919</p>
-            <p>(+51) 985 259 275</p>
-            <p>(+51) 981 531 669</p>
-            <p>info@fmaingenieros.com</p>
-        </div>
-
-        <div class="footer-col">
-            <h3>Dirección</h3>
-            <p>Jr. Benjamín Quiroga, SMP,<br>
-                Urbanización San German,<br>
-                Lima - Perú
-            </p>
-            <p>Atendemos proyectos a nivel nacional</p>
-        </div>
-
+    <div class="footer-col footer-brand">
+      <img src="img/fma_blanco.png" class="footer-logo" alt="FMA Ingenieros" loading="lazy" decoding="async">
+      <p>Soluciones integrales en ingeniería: sistemas contra incendios, instalaciones eléctricas, seguridad electrónica y obras civiles en todo el Perú.</p>
     </div>
 
-    <div class="footer-bottom">
-        <p>© 2026 FMA Ingenieros - Todos los derechos reservados</p>
+    <div class="footer-col">
+      <h3>Navegación</h3>
+      <a href="/"><i class="fa fa-chevron-right"></i> Inicio</a>
+      <a href="acerca-de"><i class="fa fa-chevron-right"></i> Nosotros</a>
+      <a href="/#servicios"><i class="fa fa-chevron-right"></i> Servicios</a>
+      <a href="contacto"><i class="fa fa-chevron-right"></i> Contacto</a>
     </div>
 
+    <div class="footer-col">
+      <h3>Contáctanos</h3>
+      <div class="footer-contact-item">
+        <i class="fa fa-phone"></i>
+        <div>
+          <a href="tel:+5151795640">(+51) 051 - 795640</a>
+          <a href="tel:+51953943919">(+51) 953 943 919</a>
+          <a href="tel:+51985259275">(+51) 985 259 275</a>
+          <a href="tel:+51981531669">(+51) 981 531 669</a>
+        </div>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:info@fmaingenieros.com">info@fmaingenieros.com</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Ubicación</h3>
+      <div class="footer-contact-item">
+        <i class="fa fa-location-dot"></i>
+        <p>Jr. Benjamín Quiroga, SMP,<br>Urbanización San German,<br>Lima &mdash; Perú</p>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa fa-globe"></i>
+        <p>Atendemos proyectos a nivel nacional</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 FMA Ingenieros &mdash; Todos los derechos reservados<br>Web desarrollada por AxelitoDev</p>
+  </div>
 </footer>
 
-<script>
-window.addEventListener("scroll", function () {
-    const header = document.querySelector("header");
-
-    if (window.scrollY > 50) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
