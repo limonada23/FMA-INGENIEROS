@@ -24,25 +24,30 @@ Las URLs públicas están configuradas sin la extensión `.html`, manteniendo un
 ```text
 .
 |- index.html
-|- acerca-de.html
-|- contacto.html
-|- contra-incendio.html
-|- instalaciones-electricas.html
-|- seguridad-electronica.html
-|- redes.html
-|- obras.html
-|- mantenimiento.html
-|- sistemas-especiales.html
-|- styles-base.css
-|- styles-home.css
-|- styles-about.css
-|- styles-contact.css
-|- styles-services.css
-|- script.js
+|- pages/
+|  |- acerca-de.html
+|  |- contacto.html
+|  `- servicios/
+|     |- contra-incendio.html
+|     |- instalaciones-electricas.html
+|     |- seguridad-electronica.html
+|     |- redes.html
+|     |- obras.html
+|     |- mantenimiento.html
+|     `- sistemas-especiales.html
+|- assets/
+|  |- css/
+|  |  |- styles-base.css
+|  |  |- styles-home.css
+|  |  |- styles-about.css
+|  |  |- styles-contact.css
+|  |  `- styles-services.css
+|  |- js/
+|  |  `- script.js
+|  `- img/
 |- robots.txt
 |- sitemap.xml
-|- .htaccess
-`- img/
+`- .htaccess
 ```
 
 ## Páginas incluidas

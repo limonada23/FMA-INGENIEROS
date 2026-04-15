@@ -1,13 +1,19 @@
 RewriteEngine On
 
-# Ocultar .html
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+# Servir archivos y carpetas existentes sin reescritura
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-# Redirigir .html a limpio
-RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
-RewriteRule ^ /%1 [R=301,L]
-
-# Redirigir index.html → /
-RewriteCond %{THE_REQUEST} /index\.html [NC]
+# Redirigir index.html -> /
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:\s|\?) [NC]
 RewriteRule ^index\.html$ / [R=301,L]
+
+# Redirigir cualquier .html a URL limpia
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:\s|\?) [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Rutas limpias principales
+RewriteRule ^$ index.html [L]
+RewriteRule ^(acerca-de|contacto)$ pages/$1.html [L]
+RewriteRule ^(contra-incendio|instalaciones-electricas|seguridad-electronica|redes|obras|mantenimiento|sistemas-especiales)$ pages/servicios/$1.html [L]
